@@ -18,7 +18,7 @@ myFunction();
 //🚀🚀🚀 ⬇️ 📝 Explanation ⬇️ 📝 🚀🚀🚀: 
 
 
-
+//nested function is the child of myFunction, and the variable internal is within that function.
 
 
 /* 🚀🚀🚀 Task 2: Counter 🚀🚀🚀 */
@@ -28,7 +28,7 @@ myFunction();
     
 For example, `summation(4)` should return 10 because 1+2+3+4 is 10. Note, you may use a for loop for this function if you wish */
 
-function summation(/*Your Code Here*/) {
+function summation() {
   /*Your Code Here*/
 
   }
@@ -56,8 +56,8 @@ const zooAnimals = [
   displayNames will be an array of strings, and each string should follow this pattern: "name: {name}, scientific: {scientific name}"
   */
 
-  function animalNames(/*Your Code Here*/){
-    /*Your Code Here*/
+  function animalNames(zooAnimals){
+    return (`name: ${animal_name}, scientific: ${scientific_name}`)
   }
   
 
@@ -143,8 +143,10 @@ function greeting(/*Your Code Here */){
 /* 🐴🐴🐴 Step 1: Base Constructor 🐴🐴🐴
  Use the constructor function named CuboidMaker to accept properties for length, width, and height which can be initialized as an object
 */
-function CuboidMaker(/*Your Code Here */){
-  /*Your Code Here */
+function CuboidMaker(length, width, height){
+  this.length = length;
+  this.width = width;
+  this.height = height
 }
 
 
